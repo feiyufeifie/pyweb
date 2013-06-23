@@ -5,10 +5,24 @@
 {% endblock %}
 
 {% block bodey %}
-    <div>{% if msg %}<p>{{ msg }}{% endif %}</div>
-    <form method="post" action="{{ url_for('account.login') }}">
-        <label class="label" for="txt_email">帐号：</label><input id="txt_email" type="text" name="email" value="{{email}}" /><br/>
-		<label class="label" for="txt_pwd">密码：</label><input id="txt_pwd" type="password" name="pwd" /><br/>
-		<input id="btn_submit" type="submit" value="登录" />
+    {% if msg %}
+        <div><span style="color:red;">{{msg}}</span></div>
+    {% endif %}
+    <form action="{{ url_for('account.login') }}" method="post" name="login">
+        {{form.hidden_tag()}}
+        <p>
+            邮箱:{{form.email(size=40)}}<br>
+            {% for error in form.errors.email %}
+                <span style="color:red;">{{error}}</span>
+            {% endfor %}
+        </p>
+        <p>
+            密码:{{form.pwd(size=40)}}<br>
+            {% for error in form.errors.pwd %}
+                <span style="color:red;">{{error}}</span>
+            {% endfor %}
+        </p>
+        <p>{{form.remember_me}} 下次自动登录</p>
+        <p><input type="submit" value="登录"></p>
     </form>
 {% endblock %}

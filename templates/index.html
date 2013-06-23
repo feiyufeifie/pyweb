@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <title>首页</title>
+{% endblock %}
+
+{% block bodey %}
+    {% if user and user.name%}
+        <div>欢迎你， {{ user.name }} </div>
+    {% else %}
+        <div>你还没有登录！</div>
+    {% endif %}
+{% endblock %}

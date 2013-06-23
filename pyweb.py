@@ -3,10 +3,13 @@ import logging
 from logging.handlers import RotatingFileHandler
 import os
 from flask import Flask, request, redirect, render_template, url_for, g
-from flask.ext.principal import Principal, identity_loaded
+from flask.ext.login import LoginManager, current_user
 from models import User
 import views
 from extensions import *
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 import pymysql
 pymysql.install_as_MySQLdb()
@@ -14,6 +17,7 @@ pymysql.install_as_MySQLdb()
 DEFAULT_APP_NAME = 'pyweb'
 
 DEFAULT_MODULES = (
+    (views.index, ""),
     (views.account, "/account"),
 )
 
@@ -50,17 +54,19 @@ def configure_extensions(app):
 
 
 def configure_identity(app):
-    principal = Principal(app)
+    login_manager = LoginManager()
+    login_manager.init_app(app)
+    login_manager.login_view = "account.login"
 
-    @identity_loaded.connect_via(app)
-    def on_identity_loaded(sender, identity):
-        g.user = User.query.from_identity(identity)
+    @login_manager.user_loader
+    def load_user(userid):
+        return User.get_by_id(int(userid))
 
 
 def configure_before_handlers(app):
     @app.before_request
     def authenticate():
-        g.user = getattr(g.identity, 'user', None)
+        g.user = current_user
 
 
 def configure_errorhandlers(app):
