@@ -14,11 +14,11 @@ PER_PAGE = 20
 DEBUG_LOG = 'logs/debug.log'
 ERROR_LOG = 'logs/error.log'
 
-MAIL_SERVER = 'smtp.gmail.com'
+MAIL_SERVER = 'smtp.163.com'
 MAIL_PORT = 465
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
 MAIL_DEBUG = DEBUG
-MAIL_USERNAME = 'username'
-MAIL_PASSWORD = 'password'
-DEFAULT_MAIL_SENDER = 'yourname@domain.com'
+MAIL_USERNAME = 'pythonweb'
+MAIL_PASSWORD = '12qwaszx'
+DEFAULT_MAIL_SENDER = 'pythonweb@163.com'

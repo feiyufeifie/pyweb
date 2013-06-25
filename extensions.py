@@ -4,8 +4,7 @@
 from flask.ext.mail import Mail
 from flask.ext.sqlalchemy import SQLAlchemy
 
-__all__ = ['mail', 'db', 'config']
+__all__ = ['mail', 'db']
 
 mail = Mail()
 db = SQLAlchemy()
-config = {}

@@ -1,8 +1,7 @@
 #coding=utf-8
 from flask import Module, render_template, redirect, flash, url_for, g
 from flask.ext.login import login_user, logout_user
-from flask.ext.mail import Message
-from extensions import mail, config
+from mailhelper import MailHelper
 from models import User
 from views.forms import RegForm, LoginForm, FindPwdForm
 
@@ -65,7 +64,7 @@ def findpwd():
         email = str(form.email.data)
         user = User.get_by_email(email)
         if user:
-            mail.send_mail('测试', '<b>testing</b>', email)
+            MailHelper.send_mail('测试', '<b>testing</b>', email)
         else:
             msg = '该邮箱没有注册，请核对信息'
 
