@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8b487bc-abdc-4bff-8a54-1e430124571b" name="Default" comment="" />
+    <list default="true" id="f8b487bc-abdc-4bff-8a54-1e430124571b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/findpwd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mailhelper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account/reg.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pyweb.iml" afterPath="$PROJECT_DIR$/.idea/pyweb.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/account.py" afterPath="$PROJECT_DIR$/views/account.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions.py" afterPath="$PROJECT_DIR$/extensions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/forms.py" afterPath="$PROJECT_DIR$/views/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="$PROJECT_DIR$/.idea/other.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyweb.py" afterPath="$PROJECT_DIR$/pyweb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="$PROJECT_DIR$/.idea/testrunner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user.py" afterPath="$PROJECT_DIR$/models/user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="pyweb.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f8b487bc-abdc-4bff-8a54-1e430124571b" time="1372077930296" ignored="false" />
+    <file path="/Dummy.txt" changelist="f8b487bc-abdc-4bff-8a54-1e430124571b" time="1372131887224" ignored="false" />
     <file path="/pyweb.py" changelist="f8b487bc-abdc-4bff-8a54-1e430124571b" time="1371967743453" ignored="false" />
     <file path="/account.py" changelist="f8b487bc-abdc-4bff-8a54-1e430124571b" time="1371974857343" ignored="false" />
     <file path="/login.html" changelist="f8b487bc-abdc-4bff-8a54-1e430124571b" time="1371974159359" ignored="false" />
@@ -43,30 +62,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pyweb.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyweb.py">
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#14#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.27259684">
+            <state line="21" column="45" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
+      <file leaf-file-name="pyweb.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+            <state line="33" column="29" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,17 +92,10 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/account/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="11" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="16" column="24" selection-start="490" selection-end="490" vertical-scroll-proportion="-10.857142">
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +103,25 @@
       <file leaf-file-name="account.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/account.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="52" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+            <state line="61" column="24" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="findpwd.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/account/findpwd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mailhelper.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mailhelper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="21" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +130,16 @@
       <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="31" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
+            <state line="43" column="43" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extensions.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extensions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="17" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +148,7 @@
       <file leaf-file-name="manage.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+            <state line="15" column="16" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/models/__init__.py" />
         <option value="$PROJECT_DIR$/templates/errors/403.html" />
         <option value="$PROJECT_DIR$/templates/errors/404.html" />
         <option value="$PROJECT_DIR$/templates/errors/500.html" />
@@ -161,18 +188,19 @@
         <option value="$PROJECT_DIR$/models/user.py" />
         <option value="$PROJECT_DIR$/templates/account/login.html" />
         <option value="$PROJECT_DIR$/views/index.py" />
-        <option value="$PROJECT_DIR$/views/account.py" />
         <option value="$PROJECT_DIR$/views/forms.py" />
         <option value="$PROJECT_DIR$/pyweb.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/views/account.py" />
+        <option value="$PROJECT_DIR$/templates/account/findpwd.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1448" />
-    <option name="height" value="874" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -200,17 +228,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="pyweb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -223,22 +246,83 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -392,10 +476,10 @@
       <method />
     </configuration>
     <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.base.html" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pyweb" />
-      <item index="2" class="java.lang.String" itemvalue="Python.manage-runserver" />
-      <item index="3" class="java.lang.String" itemvalue="Python.manage-createdb" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pyweb" />
+      <item index="1" class="java.lang.String" itemvalue="Python.manage-runserver" />
+      <item index="2" class="java.lang.String" itemvalue="Python.manage-createdb" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.base.html" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -435,14 +519,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="874" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2682927" sideWeight="0.67128986" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27272728" sideWeight="0.67128986" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -522,31 +606,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../flaskenv/Lib/site-packages/flask_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="523" column="6" selection-start="19261" selection-end="19261" vertical-scroll-proportion="0.07988165" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/1280217788/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4874" column="8" selection-start="165929" selection-end="165929" vertical-scroll-proportion="0.33284023" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="24" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../flaskenv/Lib/site-packages/wtforms/validators.py">
@@ -559,52 +621,10 @@
         <state line="253" column="8" selection-start="9139" selection-end="9139" vertical-scroll-proportion="0.3323741" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/account/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="14" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/account.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="52" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="338" selection-end="338" vertical-scroll-proportion="0.24604316" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="31" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyweb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#14#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,7 +637,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.27259684">
+        <state line="10" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.3374778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="29" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="24" selection-start="490" selection-end="490" vertical-scroll-proportion="-10.857142">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mailhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="43" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="24" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/account/findpwd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

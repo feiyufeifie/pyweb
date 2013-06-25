@@ -15,6 +15,12 @@ class User(db.Model):
     add_date = db.Column(db.DateTime, default=datetime.utcnow)
     last_update_date = db.Column(db.DateTime, default=datetime.utcnow)
 
+    def __init__(self, name, email, pwd, gender=0):
+        self.name = name
+        self.email = email
+        self.pwd = pwd
+        self.gender = gender
+
     def is_authenticated(self):
         return True
 
@@ -28,12 +34,12 @@ class User(db.Model):
         return unicode(self.id)
 
     @classmethod
-    def get_by_id(self, id):
-        return self.query.filter(User.id == id).first()
+    def get_by_id(cls, id):
+        return cls.query.filter(User.id == id).first()
 
     @classmethod
-    def authenticate(self, email, pwd):
-        user = self.query.filter(User.email == email).first()
+    def authenticate(cls, email, pwd):
+        user = cls.query.filter(User.email == email).first()
         if user:
             authenticated = user.pwd == pwd
         else:
@@ -41,5 +47,15 @@ class User(db.Model):
         return user, authenticated
 
     @classmethod
-    def get_by_name(self, username):
-        return self.query.filter(User.name == username).first()
+    def get_by_name(cls, username):
+        return cls.query.filter(User.name == username).first()
+
+    @classmethod
+    def get_by_email(cls, email):
+        return cls.query.filter(User.email == email).first()
+
+    @classmethod
+    def add(cls, name, email, pwd):
+        db.session.add(User(name, email, pwd))
+        db.session.commit()
+        return cls.get_by_email(email)

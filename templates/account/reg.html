@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <titile>注册</titile>
+{% endblock %}
+
+{% block bodey %}
+    {% if msg %}
+        <div><span style="color:red;">{{msg}}</span></div>
+    {% endif %}
+    <form action="{{ url_for('account.reg') }}" method="post" name="reg">
+        {{form.hidden_tag()}}
+        <p>
+            昵称:{{form.name(size=40)}}<br>
+            {% for error in form.errors.name %}
+                <span style="color:red;">{{error}}</span>
+            {% endfor %}
+        </p>
+        <p>
+            邮箱:{{form.email(size=40)}}<br>
+            {% for error in form.errors.email %}
+                <span style="color:red;">{{error}}</span>
+            {% endfor %}
+        </p>
+        <p>
+            密码:{{form.pwd(size=40)}}<br>
+            {% for error in form.errors.pwd %}
+                <span style="color:red;">{{error}}</span>
+            {% endfor %}
+        </p>
+        <p><input type="submit" value="注册"></p>
+    </form>
+{% endblock %}

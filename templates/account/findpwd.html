@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <titile>找回密码</titile>
+{% endblock %}
+
+{% block bodey %}
+    {% if user%}
+        <div><span style="color:red;">请去您的邮箱：{{email}} 继续找回密码流程。</span></div>
+    {% else %}
+        {% if msg %}
+            <div><span style="color:red;">{{msg}}</span></div>
+        {% endif %}
+        <form action="{{ url_for('account.findpwd') }}" method="post" name="findpwd">
+            {{form.hidden_tag()}}
+            <p>
+                邮箱:{{form.email(size=40)}}<br>
+                {% for error in form.errors.email %}
+                    <span style="color:red;">{{error}}</span>
+                {% endfor %}
+            </p>
+            <p><input type="submit" value="找回密码"></p>
+        </form>
+    {% endif %}
+{% endblock %}

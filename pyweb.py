@@ -6,7 +6,7 @@ from flask import Flask, request, redirect, render_template, url_for, g
 from flask.ext.login import LoginManager, current_user
 from models import User
 import views
-from extensions import *
+from extensions import db, mail, config
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -51,7 +51,13 @@ def create_app(config=None, modules=None):
 def configure_extensions(app):
     db.init_app(app)
     mail.init_app(app)
-
+    filename = os.path.join('config.cfg')
+    try:
+        with open(filename) as config_file:
+            exec(compile(config_file.read(), filename, 'exec'), config)
+    except IOError as e:
+        e.strerror = 'Unable to load configuration file (%s)' % e.strerror
+        raise
 
 def configure_identity(app):
     login_manager = LoginManager()
