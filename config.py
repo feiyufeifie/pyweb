@@ -7,13 +7,6 @@ SQLALCHEMY_ECHO = False
 UPLOADS_DEFAULT_DEST = '/path/to/pypress/static/'
 UPLOADS_DEFAULT_URL = '/static'
 
-BABEL_DEFAULT_TIMEZONE = 'Asia/Shanghai'
-
-PER_PAGE = 20
-
-DEBUG_LOG = 'logs/debug.log'
-ERROR_LOG = 'logs/error.log'
-
 MAIL_SERVER = 'smtp.163.com'
 MAIL_PORT = 465
 MAIL_USE_TLS = False
@@ -22,3 +15,10 @@ MAIL_DEBUG = DEBUG
 MAIL_USERNAME = 'pythonweb'
 MAIL_PASSWORD = '12qwaszx'
 DEFAULT_MAIL_SENDER = 'pythonweb@163.com'
+
+ENCRYPTION_KEY = '1qaz2wsx'
+
+BABEL_DEFAULT_TIMEZONE = 'Asia/Shanghai'
+
+DEBUG_LOG = 'logs/debug.log'
+ERROR_LOG = 'logs/error.log'

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <title>重置密码</title>
+{% endblock %}
+
+{% block bodey %}
+    {% if msg %}
+        <div><span style="color:red;">{{ msg }}</span></div>
+    {% endif %}
+    <form action="{{ url_for('account.resetpwd') }}" method="post" name="resetpwd">
+        {{ form.hidden_tag() }}
+        <p>
+            密码:{{ form.pwd(size=40) }}<br>
+            {% for error in form.errors.pwd %}
+                <span style="color:red;">{{ error }}</span>
+            {% endfor %}
+        </p>
+        <p><input type="submit" value="重置密码"></p>
+{% endblock %}

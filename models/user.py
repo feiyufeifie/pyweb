@@ -1,6 +1,5 @@
 #coding=utf-8
 from datetime import datetime
-from flask.ext.sqlalchemy import BaseQuery
 from extensions import db
 
 
@@ -59,3 +58,9 @@ class User(db.Model):
         db.session.add(User(name, email, pwd))
         db.session.commit()
         return cls.get_by_email(email)
+
+    @classmethod
+    def update(cls, user):
+        db.session.add(user)
+        db.session.commit()
+        return cls.get_by_email(user.id)
