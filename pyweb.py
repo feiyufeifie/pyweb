@@ -4,9 +4,11 @@ from logging.handlers import RotatingFileHandler
 import os
 from flask import Flask, request, redirect, render_template, url_for, g
 from flask.ext.login import LoginManager, current_user
+from flask.ext.uploads import configure_uploads
+from extensions import file_set
 from models import User
 import views
-from extensions import db, mail
+from extensions import *
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -19,6 +21,7 @@ DEFAULT_APP_NAME = 'pyweb'
 DEFAULT_MODULES = (
     (views.index, ""),
     (views.account, "/account"),
+    (views.userfile, "/file"),
 )
 
 
@@ -39,7 +42,7 @@ def create_app(config=None, modules=None):
     configure_before_handlers(app)
     # configure_template_filters(app)
     # configure_context_processors(app)
-    # configure_uploads(app, (photos,))
+    configure_uploads(app, (file_set,))
     #
     # configure_i18n(app)
 

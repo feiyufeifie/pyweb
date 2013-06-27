@@ -4,8 +4,8 @@ SECRET_KEY = '!@#$%QWERT'
 SQLALCHEMY_DATABASE_URI = 'mysql://root:root@localhost/python?charset=utf8'
 SQLALCHEMY_ECHO = False
 
-UPLOADS_DEFAULT_DEST = '/path/to/pypress/static/'
-UPLOADS_DEFAULT_URL = '/static'
+UPLOADS_DEFAULT_DEST = '/upload'
+UPLOADS_DEFAULT_URL = '/file'
 
 MAIL_SERVER = 'smtp.163.com'
 MAIL_PORT = 465

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <title>上传文件</title>
+{% endblock %}
+
+{% block bodey %}
+    {% if msg %}
+        <div><span style="color:red;">{{msg}}</span></div>
+    {% endif %}
+    <form action="{{ url_for('userfile.upload') }}" method="post" name="upload" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <p>
+            选择要上传的文件（支持txt doc docx格式）:{{ form.file }}<br>
+            {% for error in form.errors.pwd %}
+                <span style="color:red;">{{ error }}</span>
+            {% endfor %}
+        </p>
+
+        <p><input type="submit" value="上传文件"></p>
+    </form>
+{% endblock %}

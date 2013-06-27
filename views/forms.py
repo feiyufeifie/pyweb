@@ -1,6 +1,6 @@
 #coding=utf-8
-from flask.ext.wtf import Form
-from wtforms import TextField, BooleanField, PasswordField, HiddenField
+from flask.ext.wtf import Form, file_required, file_allowed
+from wtforms import TextField, BooleanField, PasswordField, HiddenField, FileField
 from wtforms.fields.html5 import EmailField
 from wtforms.validators import Required
 
@@ -25,3 +25,7 @@ class FindPwdForm(Form):
 class ResetPwdForm(Form):
      pwd = PasswordField('密码：', validators=[Required('请输入密码')])
      token = HiddenField('token')
+
+
+class UploadFileForm(Form):
+     file = FileField('选择文件：', validators=[Required('请选择文件')])
