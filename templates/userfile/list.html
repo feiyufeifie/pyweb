@@ -5,5 +5,9 @@
 {% endblock %}
 
 {% block bodey %}
-
+    <ul>
+    {% for item in list %}
+        <li>{{ item.id }}：{{ item.name }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}

@@ -3,7 +3,7 @@ from flask.ext.script import Manager, Server, prompt_bool
 from extensions import db
 from pyweb import create_app
 
-manager = Manager(create_app('config.py'))
+manager = Manager(create_app('config'))
 
 manager.add_command("runserver", Server('0.0.0.0', port=8080))
 

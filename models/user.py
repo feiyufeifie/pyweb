@@ -7,8 +7,8 @@ class User(db.Model):
     __tablename__ = 'user'
 
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(20), nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
+    name = db.Column(db.String(20), nullable=False, index=True)
+    email = db.Column(db.String(100), unique=True, nullable=False, index=True)
     pwd = db.Column(db.String(80), nullable=False)
     gender = db.Column(db.SmallInteger, default=0)
     add_date = db.Column(db.DateTime, default=datetime.utcnow)
